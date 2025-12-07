@@ -30,9 +30,9 @@ Navegación:
 - HTML5 semántico (header, nav, main, section, article, footer).
 - Bootstrap:
 - Grid (contenedores, filas, columnas) y utilidades (espaciados, tipografía, display).
-- Componentes: navbar, card, badge/list-group/button según diseño.
-- Inclusión por CDN (CSS y JS de Bootstrap).
-- Git/GitHub: repo público weather-frontend-m2, mínimo 3 commit con mensaje descriptivos.
+- Componentes: ~~navbar, card~~, badge/list-group/button según diseño.
+- ~~Inclusión por CDN (CSS y JS de Bootstrap).~~
+- ~~Git/GitHub: repo público weather-frontend-m2, mínimo 3 commit con mensaje descriptivos.~~
 ### 6) Entregables
 - Proyecto comprimido en un único archivo .zip.
 - README.md dentro del proyecto, que incluya enlace al repositorio público de GitHub.
