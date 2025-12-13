@@ -21,12 +21,16 @@
       defer
       src="https://kit.fontawesome.com/037baac53d.js"
       crossorigin="anonymous"></script>
+    <!-- idea == Local Script == -->
+    <script
+      defer
+      src="assets/js/clima.js"></script>
     <title>M2 - Clima</title>
   </head>
   <body>
     <!-- hack ========== HEADER ========== -->
-    <head>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark-subtle sticky-top">
         <div class="container-fluid">
           <a
             class="navbar-brand"
@@ -114,18 +118,18 @@
           </div>
         </div>
       </nav>
-    </head>
+    </header>
     <!-- hack ========== MAIN ========== -->
-    <main
-      class="container pt-5"
-      style="height: 300vh; background-color: lightgrey;">
+    <main class="container-fluid px-5 py-5 bg-body-tertiary">
       <!-- idea == Card Template == -->
       <template id="clima-plantilla">
         <div class="col-12 col-md-6 col-lg-3">
-          <div
-            class="card"
-            style="max-width: 540px;">
+          <div class="card border-info shadow h-100">
+            <!-- City Header -->
+            <div
+              class="clima-ciudad card-header border-info-subtle text-bg-dark align-items-center text-center"></div>
             <div class="row g-0">
+              <!-- Image -->
               <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
                 <img
                   src=""
@@ -134,43 +138,52 @@
               </div>
 
               <div class="col-md-8">
-                <div class="card-body d-flex flex-column h-100">
-                  <!-- City -->
-                  <h5 class="card-title clima-ciudad"></h5>
+                <div class="card-body d-flex flex-column">
+                  <!-- Description -->
+                  <p class="card-text clima-descripcion mb-2"></p>
 
-                  <!-- Description climate -->
-                  <p class="card-text clima-descripcion"></p>
+                  <!-- Climate data -->
+                  <ul class="list-group list-group-flush">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center">
+                      Temp
+                      <span class="badge bg-primary rounded-pill">
+                        <span class="clima-temperatura"></span>°C
+                      </span>
+                    </li>
 
-                  <!-- Temperature -->
-                  <p class="card-text mb-1">
-                    <strong>Temp:</strong>
-                    <span class="clima-temp"></span>°C
-                  </p>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center">
+                      Sensación
+                      <span class="badge bg-warning text-dark rounded-pill">
+                        <span class="clima-sensacion"></span>°C
+                      </span>
+                    </li>
 
-                  <!-- Thermal sensation -->
-                  <p class="card-text mb-1">
-                    <strong>Sensación:</strong>
-                    <span class="clima-sensacion"></span>°C
-                  </p>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center">
+                      Humedad
+                      <span class="badge bg-info rounded-pill">
+                        <span class="clima-humedad"></span>%
+                      </span>
+                    </li>
 
-                  <!-- Humidity -->
-                  <p class="card-text mb-1">
-                    <strong>Humedad:</strong>
-                    <span class="clima-humedad"></span>%
-                  </p>
-
-                  <!-- Wind -->
-                  <p class="card-text mb-1">
-                    <strong>Viento:</strong>
-                    <span class="clima-viento"></span> km/h
-                  </p>
-
-                  <!-- Date -->
-                  <p class="card-text mt-auto">
-                    <small class="text-body-secondary clima-actualizado"></small>
-                  </p>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center">
+                      Viento
+                      <span class="badge bg-secondary rounded-pill">
+                        <span class="clima-viento"></span> km/h
+                      </span>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
+            <!-- Date -->
+            <div class="card-footer border mt-auto text-center">
+              <small class="text-body-secondary"
+                >Actualizado: <span class="clima-actualizado"></span
+              ></small>
             </div>
           </div>
         </div>
@@ -179,7 +192,87 @@
       <!-- idea == Card Container == -->
       <div
         id="clima-contenedor"
-        class="row g-4"></div>
+        class="row g-5"></div>
     </main>
+
+    <!-- hack ========== FOOTER ========== -->
+    <footer class="bg-dark text-light pt-3">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Brand / About -->
+          <div class="col-md-4 mb-3">
+            <h5>
+              <img
+                src="./assets/img/cloud-sun.svg"
+                alt=""
+                class="me-2"
+                width="24"
+                height="24" />Clima App
+            </h5>
+            <p class="text-secondary mb-0">
+              Información climática actualizada de distintas ciudades, presentada de forma
+              clara y sencilla.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-4 mb-3">
+            <h6 class="text-uppercase mb-3">Enlaces</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none">
+                  <i class="fa-solid fa-house me-2"></i>Inicio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none">
+                  <i class="fa-solid fa-star me-2"></i>Favoritos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none">
+                  <i class="fa-solid fa-circle-info me-2"></i>Acerca de
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-md-4 mb-3">
+            <h6 class="text-uppercase mb-3">Síguenos</h6>
+            <div class="d-flex gap-3">
+              <a
+                href="#"
+                class="text-light fs-5">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="#"
+                class="text-light fs-5">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-light fs-5">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary" />
+
+        <!-- Copyright -->
+        <div class="text-center">
+          <small class="text-secondary"> © 2025 Clima App — Proyecto educativo </small>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
