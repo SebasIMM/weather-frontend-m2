@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <!-- idea == Bootstrap == -->
+    <!-- idea ==== Bootstrap ==== -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,15 +16,18 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
-    <!-- idea == Font Awesome == -->
+    <!-- idea ==== Font Awesome ==== -->
     <script
       defer
       src="https://kit.fontawesome.com/037baac53d.js"
       crossorigin="anonymous"></script>
-    <!-- idea == Local Script == -->
+    <!-- idea ==== Scripts ==== -->
     <script
       defer
       src="assets/js/clima.js"></script>
+    <script
+      defer
+      src="assets/js/detalle.js"></script>
     <title>M2 - Clima</title>
   </head>
   <body>
@@ -119,6 +122,7 @@
         </div>
       </nav>
     </header>
+
     <!-- hack ========== MAIN ========== -->
     <main class="container-fluid px-5 py-5 bg-body-tertiary">
       <!-- idea == Card Template == -->
@@ -130,7 +134,7 @@
               class="clima-ciudad card-header border-info-subtle text-bg-dark align-items-center text-center"></div>
             <div class="row g-0">
               <!-- Image -->
-              <div class="col-md-4 d-flex align-items-center justify-content-center p-2">
+              <div class="col-4 col-md-4 d-flex mx-auto p-2">
                 <img
                   src=""
                   class="img-fluid clima-icono"
@@ -179,6 +183,16 @@
                 </div>
               </div>
             </div>
+
+            <!-- action button -->
+            <div class="card-body pt-0 text-center">
+              <button
+                class="btn btn-outline-primary btn-sm px-5 ver-detalle"
+                data-ciudad="">
+                Ver detalle
+              </button>
+            </div>
+
             <!-- Date -->
             <div class="card-footer border mt-auto text-center">
               <small class="text-body-secondary"
@@ -270,9 +284,77 @@
 
         <!-- Copyright -->
         <div class="text-center">
-          <small class="text-secondary"> © 2025 Clima App — Proyecto educativo </small>
+          <p class="text-secondary text-sm-center"> © 2025 Clima App — Proyecto educativo</p>
+          <small class="text-secondary">El futuro es hoy ¿oíste viejo? - Dewey</small>
         </div>
+
       </div>
     </footer>
+
+    <!-- idea == Modal == -->
+    <div
+      class="modal fade"
+      id="modalDetalleClima"
+      tabindex="-1"
+      >
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title mb-1">
+                Pronóstico semanal – <span id="detalle-ciudad"></span>
+              </h5>
+              <small class="text-muted">
+                Temp: <span id="detalle-temperatura"></span>°C · Sensación:
+                <span id="detalle-sensacion"></span>°C · Humedad:
+                <span id="detalle-humedad"></span>% · Viento:
+                <span id="detalle-viento"></span> km/h
+              </small>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"></button>
+          </div>
+
+          <!-- Body Tabla de la semana -->
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table text-center align-middle mb-0">
+                <thead>
+                  <tr class="border-bottom border-2">
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mié</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sáb</th>
+                    <th>Dom</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="detalle-semana">
+                    <!-- JS inyecta las 7 columnas -->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-outline-secondary px-5"
+              data-bs-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

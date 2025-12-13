@@ -1,10 +1,7 @@
 {
   "ciudades": [
     {
-      "id": 1,
       "ciudad": "Santiago",
-      "pais": "Chile",
-      "condicion": "Despejado",
       "descripcion": "Cielo totalmente despejado",
       "temperatura": 27,
       "sensacion": 26,
@@ -14,10 +11,7 @@
       "actualizado": "2025-12-07 15:30"
     },
     {
-      "id": 2,
       "ciudad": "Valparaíso",
-      "pais": "Chile",
-      "condicion": "Nublado",
       "descripcion": "Nubes dispersas sobre la costa",
       "temperatura": 19,
       "sensacion": 18,
@@ -27,10 +21,7 @@
       "actualizado": "2025-12-07 15:10"
     },
     {
-      "id": 3,
       "ciudad": "Concepción",
-      "pais": "Chile",
-      "condicion": "Lluvia ligera",
       "descripcion": "Lloviznas intermitentes",
       "temperatura": 16,
       "sensacion": 15,
@@ -40,10 +31,7 @@
       "actualizado": "2025-12-07 14:58"
     },
     {
-      "id": 4,
       "ciudad": "La Serena",
-      "pais": "Chile",
-      "condicion": "Parcialmente nublado",
       "descripcion": "Nubes altas con periodos de sol",
       "temperatura": 20,
       "sensacion": 19,
@@ -53,10 +41,7 @@
       "actualizado": "2025-12-07 14:45"
     },
     {
-      "id": 5,
       "ciudad": "Puerto Montt",
-      "pais": "Chile",
-      "condicion": "Lluvia moderada",
       "descripcion": "Precipitaciones constantes",
       "temperatura": 13,
       "sensacion": 11,
@@ -66,10 +51,7 @@
       "actualizado": "2025-12-07 14:20"
     },
     {
-      "id": 6,
       "ciudad": "Temuco",
-      "pais": "Chile",
-      "condicion": "Niebla",
       "descripcion": "Visibilidad reducida por niebla",
       "temperatura": 10,
       "sensacion": 8,
@@ -79,10 +61,7 @@
       "actualizado": "2025-12-07 14:05"
     },
     {
-      "id": 7,
       "ciudad": "Antofagasta",
-      "pais": "Chile",
-      "condicion": "Despejado",
       "descripcion": "Cielo limpio y seco",
       "temperatura": 24,
       "sensacion": 24,
@@ -92,10 +71,7 @@
       "actualizado": "2025-12-07 13:55"
     },
     {
-      "id": 8,
       "ciudad": "Iquique",
-      "pais": "Chile",
-      "condicion": "Bruma",
       "descripcion": "Neblina costera matinal",
       "temperatura": 22,
       "sensacion": 21,
@@ -105,10 +81,7 @@
       "actualizado": "2025-12-07 13:40"
     },
     {
-      "id": 9,
       "ciudad": "Arica",
-      "pais": "Chile",
-      "condicion": "Soleado",
       "descripcion": "Sol radiante durante toda la tarde",
       "temperatura": 28,
       "sensacion": 27,
@@ -118,10 +91,7 @@
       "actualizado": "2025-12-07 13:20"
     },
     {
-      "id": 10,
       "ciudad": "Punta Arenas",
-      "pais": "Chile",
-      "condicion": "Vientos fuertes",
       "descripcion": "Ráfagas intensas del sur",
       "temperatura": 7,
       "sensacion": 3,
@@ -131,10 +101,7 @@
       "actualizado": "2025-12-07 13:00"
     },
     {
-      "id": 11,
       "ciudad": "Coyhaique",
-      "pais": "Chile",
-      "condicion": "Nevadas leves",
       "descripcion": "Caída ligera de nieve",
       "temperatura": -1,
       "sensacion": -5,
@@ -144,10 +111,7 @@
       "actualizado": "2025-12-07 12:50"
     },
     {
-      "id": 12,
       "ciudad": "Rancagua",
-      "pais": "Chile",
-      "condicion": "Parcialmente nublado",
       "descripcion": "Cielo mixto con sol y nubes",
       "temperatura": 25,
       "sensacion": 24,
@@ -157,10 +121,7 @@
       "actualizado": "2025-12-07 12:40"
     },
     {
-      "id": 13,
       "ciudad": "Talca",
-      "pais": "Chile",
-      "condicion": "Lluvia ligera",
       "descripcion": "Chubascos débiles",
       "temperatura": 17,
       "sensacion": 16,
@@ -170,10 +131,7 @@
       "actualizado": "2025-12-07 12:20"
     },
     {
-      "id": 14,
       "ciudad": "Chillán",
-      "pais": "Chile",
-      "condicion": "Despejado",
       "descripcion": "Cielo totalmente claro",
       "temperatura": 23,
       "sensacion": 22,
@@ -183,10 +141,7 @@
       "actualizado": "2025-12-07 12:10"
     },
     {
-      "id": 15,
       "ciudad": "Los Ángeles",
-      "pais": "Chile",
-      "condicion": "Nublado",
       "descripcion": "Cobertura nubosa continua",
       "temperatura": 18,
       "sensacion": 17,
@@ -196,10 +151,7 @@
       "actualizado": "2025-12-07 11:58"
     },
     {
-      "id": 16,
       "ciudad": "Osorno",
-      "pais": "Chile",
-      "condicion": "Lluvia moderada",
       "descripcion": "Lluvias constantes durante el día",
       "temperatura": 14,
       "sensacion": 12,
@@ -209,10 +161,7 @@
       "actualizado": "2025-12-07 11:50"
     },
     {
-      "id": 17,
       "ciudad": "Valdivia",
-      "pais": "Chile",
-      "condicion": "Nublado",
       "descripcion": "Cielo completamente cubierto",
       "temperatura": 15,
       "sensacion": 14,
@@ -222,10 +171,7 @@
       "actualizado": "2025-12-07 11:40"
     },
     {
-      "id": 18,
       "ciudad": "Calama",
-      "pais": "Chile",
-      "condicion": "Soleado",
       "descripcion": "Ambiente muy seco y despejado",
       "temperatura": 26,
       "sensacion": 25,
@@ -235,10 +181,7 @@
       "actualizado": "2025-12-07 11:20"
     },
     {
-      "id": 19,
       "ciudad": "Copiapó",
-      "pais": "Chile",
-      "condicion": "Soleado",
       "descripcion": "Sol intenso y aire seco",
       "temperatura": 29,
       "sensacion": 28,
@@ -248,10 +191,7 @@
       "actualizado": "2025-12-07 11:10"
     },
     {
-      "id": 20,
       "ciudad": "Quillota",
-      "pais": "Chile",
-      "condicion": "Parcialmente nublado",
       "descripcion": "Periodos breves de sol",
       "temperatura": 21,
       "sensacion": 20,
